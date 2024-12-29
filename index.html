@@ -10,15 +10,30 @@
       <h1>Library JS</h1>
     </header>
     <div class="books-display">
-      <table>
-        <tr>
-          <th>Name</th>
-          <th>Author</th>
-          <th>Pages</th>
-          <th>Release Year</th>
-        </tr>
-      </table>
-      <button class="add">Add Book</button>
+      <table></table>
+      <button class="openModal">Add book</button>
+      <dialog>
+        <h4>Add New Book</h4>
+        <form method="dialog">
+          <div>
+            <labsel for="bookName">Name:</labsel>
+            <input type="text" id="bookName" name="bookName" />
+          </div>
+          <div>
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" />
+          </div>
+          <div>
+            <label for="pages">Pages:</label>
+            <input type="text" name="pages" id="pages" />
+          </div>
+          <div>
+            <label for="release">Release Year:</label>
+            <input type="text" name="release" id="release" />
+          </div>
+          <button class="add-btn">Add Book</button>
+        </form>
+      </dialog>
     </div>
 
     <script src="./library.js"></script>
