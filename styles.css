@@ -72,6 +72,16 @@ form button:hover {
   color: white;
 }
 
+.isRead > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.isRead > div small {
+  font-size: 1rem;
+}
+
 /* Books table styles */
 
 .container {
@@ -103,6 +113,7 @@ th,
 td {
   padding: 5px 15px;
   background-color: white;
+  text-transform: capitalize;
 }
 
 td {
@@ -139,4 +150,9 @@ td > button:hover {
 .openModal:hover {
   background-color: #60a5fa;
   color: white;
+}
+
+.read td {
+  background-color: #fee2e2;
+  font-style: italic;
 }
