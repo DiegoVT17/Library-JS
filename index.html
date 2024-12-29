@@ -4,37 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Library JS</h1>
-    </header>
-    <div class="books-display">
-      <table></table>
+    <div class="container">
+      <header>
+        <h1>Library JS</h1>
+      </header>
+      <div class="books-display">
+        <table></table>
+      </div>
       <button class="openModal">Add book</button>
-      <dialog>
-        <h4>Add New Book</h4>
-        <form method="dialog">
-          <div>
-            <labsel for="bookName">Name:</labsel>
-            <input type="text" id="bookName" name="bookName" />
-          </div>
-          <div>
-            <label for="author">Author:</label>
-            <input type="text" id="author" name="author" />
-          </div>
-          <div>
-            <label for="pages">Pages:</label>
-            <input type="text" name="pages" id="pages" />
-          </div>
-          <div>
-            <label for="release">Release Year:</label>
-            <input type="text" name="release" id="release" />
-          </div>
-          <button class="add-btn">Add Book</button>
-        </form>
-      </dialog>
     </div>
+
+    <dialog>
+      <h4>New Book</h4>
+      <form method="dialog">
+        <div>
+          <label for="bookName">Name:</label>
+          <input type="text" id="bookName" name="bookName" autocomplete="off" />
+        </div>
+        <div>
+          <label for="author">Author:</label>
+          <input type="text" id="author" name="author" autocomplete="off" />
+        </div>
+        <div>
+          <label for="pages">Pages:</label>
+          <input type="text" name="pages" id="pages" autocomplete="off" />
+        </div>
+        <div>
+          <label for="release">Release Year:</label>
+          <input type="text" name="release" id="release" autocomplete="off" />
+        </div>
+        <button class="add-btn">Add Book</button>
+      </form>
+    </dialog>
 
     <script src="./library.js"></script>
   </body>

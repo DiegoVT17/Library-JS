@@ -26,6 +26,7 @@ let myLibrary = [
 
 btnModal.addEventListener("click", () => {
   modal.showModal()
+  modal.autofocus
 })
 
 function handleSubmit(e) {
