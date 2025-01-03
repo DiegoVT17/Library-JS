@@ -2,12 +2,13 @@ const bookForm = document.querySelector("form");
 const modal = document.querySelector("dialog");
 const btnModal = document.querySelector(".openModal");
 
-function Book(name, author, pages, relYear, isRead) {
+function Book(name, author, pages, relYear, isRead, index) {
   this.name = name;
   this.author = author;
   this.pages = pages;
   this.releaseYear = relYear;
   this.isRead = isRead;
+  this.index = index;
 }
 
 let myLibrary = [
@@ -41,7 +42,6 @@ function handleSubmit(e) {
   const pages = form.pages.value;
   const relYear = form.release.value;
   const isReadInput = form.isRead.value;
-
   const isRead = isReadInput === "true";
 
   addBookToLibrary(name, author, pages, relYear, isRead);
